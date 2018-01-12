@@ -1,20 +1,3 @@
-# flex-style
-flex兼容写法
-
-## 1.兼容性
-经过在[安卓真机上测试结果](http://p0.meituan.net/education/018539331feb4d9cf0bdb609b14678c0122349.png)发现：
-1. android从4.4版本开始支持flex
-1. android 4.0~4.3 部分支持-webkit-flex，另一部分不支持
-1. 测试中发现奇葩机器华为6.0以下（不包含6.0）也不支持flex
-下面是通过CanIUse中得出
-1. safari 7.1以下只支持box，7.1+支持-webkit-flex
-1. IE10以下不支持box，10+支持-ms-flex
-
-总的来说，想实现弹性布局，需要同时使用box和flex
-
-
-## 2.兼容写法：
-```
 /* flex 容器 */
 .flexbox {
     display: -webkit-box;
@@ -131,13 +114,3 @@ flex兼容写法
     -webkit-justify-content: space-between;
     justify-content: space-between;
 }
-
-```
-
-## 3.参考资料：
-- [flex布局兼容性问题](http://www.cnblogs.com/mk2016/p/5562994.html)
-- [阮一峰-Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
-- [阮一峰-Flex 布局教程：实例篇](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
-
-## 4.最后
-![flex脑图](http://p0.meituan.net/education/712a0612bb2fc23630cc1bd952947014344805.png)
