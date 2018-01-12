@@ -2,7 +2,9 @@
 flex兼容写法
 
 ## 1.兼容性
-经过在[安卓真机上测试结果](http://p0.meituan.net/education/018539331feb4d9cf0bdb609b14678c0122349.png)发现：
+![安卓真机上测试结果](http://p0.meituan.net/education/018539331feb4d9cf0bdb609b14678c0122349.png)
+
+测试结果：
 1. android从4.4版本开始支持flex
 1. android 4.0~4.3 部分支持-webkit-flex，另一部分不支持
 1. 测试中发现奇葩机器华为6.0以下（不包含6.0）也不支持flex
